@@ -22,12 +22,7 @@ class User extends Authenticatable
         return $this->belongsTo(Country::class, 'country_id', 'id');
     }
 
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-        'country_id'
-    ];
+    protected $guarded = false;
 
     /**
      * The attributes that should be hidden for serialization.

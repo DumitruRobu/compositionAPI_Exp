@@ -13,6 +13,11 @@ const router = createRouter({
             name: 'All',
             component: () => import('../js/components/AllComponent.vue')
         },
+        {
+            path: '/edit/:id',
+            name: 'EditPerson',
+            component: () => import('../js/components/EditComponent.vue')
+        },
     ]
 })
 export default router
